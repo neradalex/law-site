@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Louis Pissios, Attorney at Law | Updates</title>
+    <meta
+      name="description"
+      content="Post and read website updates from Louis Pissios, Attorney at Law."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="nav container dark-nav">
+        <div class="brand">Louis Pissios, Attorney</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About & Services</a>
+          <a class="active" href="updates.html">Updates</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section container">
+        <h1 class="page-title">Website Updates</h1>
+        <p class="section-intro">
+          Publish announcements, legal updates, or office news here.
+        </p>
+
+        <form id="post-form" class="card post-form" aria-label="Create website update">
+          <h3>Create a New Post</h3>
+          <label for="post-title">Title</label>
+          <input id="post-title" name="title" type="text" required maxlength="120" placeholder="e.g., Office Hours Update" />
+
+          <label for="post-content">Message</label>
+          <textarea
+            id="post-content"
+            name="content"
+            rows="5"
+            required
+            maxlength="1200"
+            placeholder="Share your update here..."
+          ></textarea>
+
+          <button type="submit" class="btn primary">Publish Post</button>
+        </form>
+
+        <div class="posts-header">
+          <h3>Recent Posts</h3>
+          <button id="clear-posts" class="btn ghost" type="button">Clear All</button>
+        </div>
+        <div id="posts" class="posts" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Social</h2>
+          <p>
+            <a href="https://www.instagram.com/louispissios" target="_blank" rel="noopener noreferrer">Instagram @louispissios</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/LouisMPissiosPC" target="_blank" rel="noopener noreferrer">Facebook Louis M. Pissios PC</a>
+          </p>
+        </div>
+      </div>
+      <p class="copyright">© <span id="year"></span> Louis Pissios, Attorney. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
